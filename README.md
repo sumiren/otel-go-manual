@@ -21,7 +21,7 @@
 
 これで取れるトレースのイメージ
 
-![image](img.png)
+![image](./doc/img.png)
 
 ## 感想
 
