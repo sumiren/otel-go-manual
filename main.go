@@ -61,7 +61,7 @@ func setupRouter(tracerProvider *trace.TracerProvider) *gin.Engine {
 	r := gin.Default()
 	r.Use(otelgin.Middleware("otel-go"))
 
-	db, _ := otelsql.Open("mysql", "3uAcMNCBzHP6Q4A.root:WFCUi393BPAf1vmN@tcp(gateway01.ap-northeast-1.prod.aws.tidbcloud.com:4000)/main?tls=tidb", otelsql.WithAttributes(
+	db, _ := otelsql.Open("mysql", "TBD", otelsql.WithAttributes(
 		semconv.DBSystemMySQL))
 
 	// Ping test
